@@ -1,0 +1,82 @@
+.TrainsContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  width: 600px;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.TrainForm {
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+
+.DateBox, .DistBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.DateInput {
+  margin: 5px, 10px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.DistInput {
+  margin: 5px, 10px;
+  padding: 5px;
+}
+
+label {
+  margin: 5px, 10px;
+  padding: 5px;
+}
+
+.FormBtn {
+  margin-top: 25px;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.OkBtn {
+  height: 30px;
+  width: 100px;
+}
+
+.TrainsInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.TrainsHeader {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.TrainsInfoTable {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+}
+
+.TrainItem {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.TrainDate {
+  width: 180px;
+}
+
+.TrainDist {
+  width: 180px;
+}
+
