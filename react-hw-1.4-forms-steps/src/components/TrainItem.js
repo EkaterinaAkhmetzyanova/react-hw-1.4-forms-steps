@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 export default function TrainItem({item, onDelete}) {
-    console.log(item);
     return (
         <div className='TrainItem'>
             <div className='TrainDate'>{item.date}</div>

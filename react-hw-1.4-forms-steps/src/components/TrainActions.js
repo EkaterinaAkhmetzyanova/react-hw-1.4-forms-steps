@@ -39,8 +39,8 @@ export default function TrainItem() {
     };
 
     const handleDelete = (id) => {
-        const item = trainsArr.find((el) => el.id === id);
-        return () => {setTrains(prev => trainsArr.splice(trainsArr.indexOf(item), 1));}
+        const item = trainsArr.filter((el) => el.id !== id);
+        return () => {setTrains(prev => item)}
     };
 
     return(

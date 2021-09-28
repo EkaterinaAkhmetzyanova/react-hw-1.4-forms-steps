@@ -2,8 +2,9 @@
 import PropTypes from 'prop-types';
 import TrainItem from './TrainItem';
 
-export default function TrainsInfo({trainsArr, onDelete}) {
-    trainsArr.sort((a, b) => {
+export default function TrainsInfo({onDelete, trainsArr}) {
+    const arr = [...trainsArr];
+    arr.sort((a, b) => {
         const day = a.date.slice(0, 2);
         const month = a.date.slice(3, 5);
         const year = a.date.slice(8,10);
@@ -15,6 +16,9 @@ export default function TrainsInfo({trainsArr, onDelete}) {
         return bFormat - aFormat;
     });
 
+    console.log(trainsArr);
+    console.log(arr);
+
     return (
         <div className='TrainsInfo'>
             <header className='TrainsHeader'>
@@ -23,7 +27,7 @@ export default function TrainsInfo({trainsArr, onDelete}) {
                 <div className='TrainsHeaderActions'>Действия</div>
             </header>
             <div className='TrainsInfoTable'>
-                {trainsArr.map((item) => {
+                {arr.map((item) => {
                     return <TrainItem key={item.id} item={item} onDelete={onDelete} />
                 })}
             </div>
